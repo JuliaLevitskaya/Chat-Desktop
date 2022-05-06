@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.chat {
+    height: 100vh;
+}
+
+.channels {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(112, 112, 112, 1) 100%);
+    width: 4.7%;
+    height: 100%;
+    padding-top: 10px;
+}
+
+.channels__buttons {
+    display: flex;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+.channel__button {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.channel__button--red {
+    background-color: #FD4948;
+}
+
+.channel__button--orange {
+    background-color: rgb(255, 202, 10);
+}
+
+.channel__button--green {
+    background-color: #70CC16;
+}
+
+.channel__logo {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 19px;
+    opacity: 0.5;
+}
+
+.channel__logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 15px 0 15px;
+}
+
+.active {
+    opacity: 1;
+}
+
+.channel__btn {
+    background-color: rgb(86, 85, 85);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    cursor: pointer;
+}
