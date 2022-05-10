@@ -1,14 +1,29 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+    width: 7px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 20px;
 }
 
 .chat {
     height: 100vh;
+    display: flex;
 }
 
 .channels {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(112, 112, 112, 1) 100%);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 1) 11%, rgba(31, 31, 31, 1) 50%, rgba(41, 41, 41, 0.96) 73%, rgba(54, 54, 54, 0.93) 87%, rgba(87, 87, 87, 1) 100%);
     width: 4.7%;
     height: 100%;
     padding-top: 10px;
@@ -69,4 +84,194 @@
     height: 40px;
     padding: 10px;
     cursor: pointer;
+}
+
+.list {
+    background-image: linear-gradient(0deg, rgba(13, 13, 13, 1) 11%, rgba(79, 79, 79, 1) 68%, rgba(115, 115, 115, 1) 100%);
+    width: 15%;
+    height: 100%;
+    padding: 35px 26px 0 26px;
+    overflow: auto;
+}
+
+.list__title {
+    display: flex;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.list__groups {
+    font-family: "Lato-Regular";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    padding-bottom: 20px;
+    color: #B5B5B5;
+}
+
+.list__group {
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 12px;
+    list-style: none;
+    padding-left: 13px;
+}
+
+.list__group-active {
+    display: flex;
+    align-items: center;
+    background-color: #979595;
+    width: 180px;
+    height: 25px;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+.list__friends {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #B5B5B5;
+}
+
+.list__friend {
+    display: flex;
+    align-items: center;
+    margin-bottom: 27px;
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 8px 0 0 15px;
+    color: #B5B5B5;
+}
+
+.list__title-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.list__title::after {
+    content: '';
+    background-image: url(../img/Icon2.png);
+    font-size: 13px;
+    width: 11px;
+    height: 7px;
+    display: block;
+    margin-left: 5px;
+}
+
+.list__subtitle-box {
+    display: flex;
+    align-items: center;
+    padding-bottom: 32px;
+}
+
+.list__subtitle {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #B5B5B5;
+}
+
+.list__subtitle-img {
+    padding-right: 11px;
+}
+
+.list__group-title-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 14px;
+}
+
+.list__group-title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #919191;
+}
+
+.list__group-number {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #919191;
+}
+
+.list__friend-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 28px;
+}
+
+.list__friend-title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #919191;
+}
+
+.list__friend-number {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #919191;
+}
+
+.list__friends-img {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.list__friends--active {
+    display: flex;
+    padding-left: 5px;
+    position: relative;
+}
+
+.list__friends--active::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+    top: 14px;
+    background-color: #70CC16;
+}
+
+.list__friends--inactive {
+    display: flex;
+    padding-left: 5px;
+    position: relative;
+}
+
+.list__friends--inactive::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+    top: 14px;
+    background-color: #666666;
+    ;
 }
