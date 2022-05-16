@@ -578,3 +578,133 @@ a {
 .chat__input-message {
     width: 100%;
 }
+
+.chat__contact-us {
+    width: 15.3%;
+    background-color: #d4d4d4;
+    overflow: auto;
+}
+
+.chat__contact-us-img {
+    width: 235px;
+    height: 235px
+}
+
+.chat__contact-us_description {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.chat__contact-name {
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 5px;
+    color: #000000;
+}
+
+.chat__contact-name::after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    top: 6px;
+    right: -6px;
+    border-radius: 50%;
+    background-color: #70CC16;
+    display: block;
+    margin: auto;
+    margin-left: 6px;
+}
+
+.chat__contact-status {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    padding-bottom: 25px;
+    color: #5F6164;
+}
+
+.chat__contact-icons {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.chat__contact-icons-bg {
+    list-style: none;
+    margin-right: 7px;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    background-color: #E8E8EB;
+    cursor: pointer;
+}
+
+.chat__contact-social-network {
+    padding-left: 5px;
+    padding-top: 4px;
+}
+
+.chat__contact-social-network--fc {
+    padding-left: 8px;
+    padding-top: 4px;
+}
+
+.chat__contact-buttons {
+    display: flex;
+    padding-bottom: 14px;
+}
+
+.chat__btn-message {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFFFFF;
+    background-color: #3577EF;
+    border-radius: 5px;
+    padding: 5px 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.chat__btn-more {
+    background-color: #3577EF;
+    border-radius: 5px;
+    padding: 7px 9px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.chat__contact {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    padding-bottom: 3px;
+    color: #5F6164;
+}
+
+.chat__contact-info {
+    padding-bottom: 12px;
+}
+
+.chat__contact-black {
+    color: #000000;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.chat__contact-farther {
+    position: absolute;
+    bottom: 30px;
+    right: 18px;
+    cursor: pointer;
+}
